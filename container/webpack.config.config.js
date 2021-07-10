@@ -15,7 +15,7 @@ module.exports = {
   mode: 'production',
   module: {
     rules: [
-      {parser: {System: false}},
+      { parser: { System: false } },
       {
         test: /\.js?$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
@@ -60,8 +60,8 @@ module.exports = {
   },
   plugins: [
     CopyWebpackPlugin([
-      {from: path.resolve(__dirname, 'src/index.html')},
-      {from: path.resolve(__dirname, 'src/styles.css')},
+      { from: path.resolve(__dirname, 'src/index.html') },
+      { from: path.resolve(__dirname, 'src/styles.css') },
     ]),
     new CleanWebpackPlugin(['build']),
   ],
@@ -72,4 +72,3 @@ module.exports = {
     /^rxjs\/?.*$/,
   ],
 };
-

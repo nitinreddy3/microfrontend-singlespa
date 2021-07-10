@@ -5,7 +5,7 @@
   <div style="background-color: aliceblue;height: 40vh; width: 50%; overflow: scroll;">
     <div *ngFor='let country of countryList' style="padding: 10px;">
       <!-- <a routerLink='/details/{{country?.name}}'> {{ country?.name }} </a> -->
-      <a routerLink="[/home/]" fragment='{{country?.name}}'>{{ country?.name }}</a>
+      <a routerLink="[app-details]" fragment='{{country?.name}}'>{{ country?.name }}</a>
     </div>
   </div>
 </div>
